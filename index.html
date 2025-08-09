@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>for World wide handsome</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap');
+
+  :root {
+    --dark-bg: #2c0b18; /* deep burgundy background */
+    --gold: #c59d5f; /* warm gold */
+    --text-gold: #f3e0b0;
+    --shadow-gold: rgba(197, 157, 95, 0.8);
+    --deep-black: #0a0204;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0; padding: 0;
+    height: 100%;
+    background: var(--dark-bg);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-gold);
+    overflow: hidden;
+  }
+  .container {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem 3rem 3rem 3rem;
+    background: linear-gradient(145deg, #3e1828, #6a3c25);
+    border-radius: 25px;
+    box-shadow:
+      0 0 20px var(--shadow-gold),
+      inset 0 0 40px #3e1f14cc;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /* Background images with opacity and blend */
+  .bg-face1, .bg-face2, .bg-face3 {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.06;
+    filter: grayscale(90%) brightness(110%);
+    pointer-events: none;
+    user-select: none;
+    transition: opacity 0.5s ease;
+  }
+  .bg-face1 {
+    width: 450px;
+    height: 450px;
+    top: -150px;
+    left: -120px;
+    background: url('images/jin1.jpg') no-repeat center/cover;
+    animation: slow-zoom 20s ease-in-out infinite alternate;
+  }
+  .bg-face2 {
+    width: 350px;
+    height: 350px;
+    top: 70px;
+    right: -140px;
+    background: url('images/jin2.jpg') no-repeat center/cover;
+    animation: slow-zoom 18s ease-in-out infinite alternate-reverse;
+  }
+  .bg-face3 {
+    width: 300px;
+    height: 300px;
+    bottom: -130px;
+    left: 40%;
+    background: url('images/jin3.jpg') no-repeat center/cover;
+    animation: slow-zoom 22s ease-in-out infinite alternate;
+  }
+
+  @keyframes slow-zoom {
+    0% {
+      transform: scale(1);
+      opacity: 0.05;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 0.1;
+    }
+  }
+
+  .avatar {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 28px var(--gold);
+    border: 5px solid var(--gold);
+    overflow: hidden;
+    animation: pulseGlow 4s ease-in-out infinite;
+    background: var(--deep-black);
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 24px var(--gold);
+    }
+    50% {
+      box-shadow: 0 0 48px var(--gold);
+    }
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    margin-bottom: 18px;
+    color: var(--gold);
+    text-shadow: 0 0 14px var(--gold);
+    letter-spacing: 0.07em;
+    animation: fadeInUp 1.8s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  p {
+    font-size: 1.3rem;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: var(--text-gold);
+    text-shadow: 0 0 8px rgba(197, 157, 95, 0.6);
+    animation: fadeInUp 2.2s ease forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="region" aria-label="VIP Rakshabandhan Wish for Jin Bhaiya">
+    <div class="bg-face1"></div>
+    <div class="bg-face2"></div>
+    <div class="bg-face3"></div>
+    <div class="avatar" aria-label="Jin Bhaiya's face">
+      <img src="images/jin-main.jpg" alt="Jin smiling" />
+    </div>
+    <h1>Happy Rakshabandhan, Jin bhaiya 💜</h1>
+    <p>Your humor and warmth feel like home. Thank you for always making us smile and being our World Wide Handsome big brother.</p>
+  </div>
+</body>
+</html>
